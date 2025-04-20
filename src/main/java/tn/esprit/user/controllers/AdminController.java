@@ -7,6 +7,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
 import tn.esprit.user.services.Userservice;
+import javafx.collections.FXCollections;
 
 import java.sql.SQLException;
 import java.util.List;
@@ -48,7 +49,7 @@ public class AdminController {
 
         try {
             List<User> users = userService.getAllUsers();
-            userTable.getItems().addAll(users);
+            userTable.setItems(FXCollections.observableArrayList(users));
         } catch (SQLException e) {
             showError("Erreur de chargement", "Impossible de charger la liste des utilisateurs.");
             e.printStackTrace();

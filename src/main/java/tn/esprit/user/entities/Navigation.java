@@ -22,7 +22,7 @@ public class Navigation {
             Scene scene = new Scene(loader.load(), width, height);
             stage.setScene(scene);
             stage.setTitle(title);
-            controllerSetup.run();
+            controllerSetup.run(loader.getController());
         } catch (IOException e) {
             showError("Erreur de navigation", "Impossible de charger l'écran : " + fxmlPath);
             e.printStackTrace();
