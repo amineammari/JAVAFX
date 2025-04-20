@@ -8,6 +8,7 @@ import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import tn.esprit.user.services.Userservice;
+import javafx.collections.FXCollections;
 
 import java.sql.SQLException;
 

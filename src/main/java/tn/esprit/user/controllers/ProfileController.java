@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
 import tn.esprit.user.services.Userservice;
+import javafx.collections.FXCollections;
 
 import java.sql.SQLException;
 
