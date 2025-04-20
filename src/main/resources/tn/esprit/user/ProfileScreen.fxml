@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="tn.esprit.user.controllers.ProfileController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+
+    <Label fx:id="titleLabel" text="Profil"/>
+    <TextField fx:id="emailField" promptText="Email"/>
+    <TextField fx:id="nomField" promptText="Nom"/>
+    <TextField fx:id="prenomField" promptText="Prénom"/>
+    <DatePicker fx:id="dateNaissanceField" promptText="Date de naissance"/>
+    <TextField fx:id="telField" promptText="Téléphone"/>
+    <Button text="Mettre à jour" onAction="#handleUpdate"/>
+    <Button text="Supprimer le compte" onAction="#handleDelete"/>
+    <Button text="Déconnexion" onAction="#handleLogout"/>
+</VBox>
